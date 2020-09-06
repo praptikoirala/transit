@@ -16,6 +16,7 @@ a{
 
 p{
     font-size:1.5rem;
+    color:#7D7F81;
 }
 
 .container{
@@ -23,7 +24,6 @@ p{
     margin:auto;
     padding:0 2rem;
     overflow:hidden;
-    border:1px solid red;
 }
 
 .l-heading{
@@ -32,7 +32,8 @@ p{
 }
 
 .m-heading{
-    font-size:2.2rem;
+    font-size:2.8rem;
+    margin-bottom:1rem;
 }
 
 .s-heading{
@@ -44,6 +45,16 @@ p{
 .py-2{padding:2rem 0;}
 .py-3{padding:1.5rem 0;}
 
+.abtn{
+    padding:1.2rem 3rem;
+    background:#3CADD4;
+    border-radius:50px;
+    margin-top:3rem;
+}
+
+.abtn:hover{
+    background:#5FCEC0;
+}
 /* Navbar & Showcase */
 header{
     background:black url('./pictures/showcase-img.jpg')no-repeat center center/cover;
@@ -79,6 +90,7 @@ header .header-content{
 }
 
 #navbar div ul{
+    align-self:center;
     display:flex;
     list-style:none;
     padding:0.5rem;
@@ -87,7 +99,7 @@ header .header-content{
 
 #navbar div ul li a{
     padding:0.5rem 1rem;
-    color:#7D7F81;
+    color:#E3E3E3;
 }
 
 #navbar div ul li a:hover{
@@ -95,13 +107,15 @@ header .header-content{
 }
 
 #navbar div .btn{
-    border:none;
-    font-size:1.2rem;
+    align-self: center;
     background-color: #ffffff;
     color:#7D7F81;
-    padding:0.4rem 1rem;
+    text-align: center;
+    font-size:1.2rem;
+    padding:0.2rem 1rem;
     border-radius:50px;
 }
+
 
 #showcase-content{
     display:flex;
@@ -109,23 +123,16 @@ header .header-content{
     align-content:center;
     align-items:center;
     text-align:center;
-    padding:8.3rem 0;
+    padding:7rem 0;
     color:white;
 }
 
-#showcase-content a{
-    padding:1.2rem 3rem;
-    background:#3CADD4;
-    border-radius:50px;
-    margin-top:3rem;
-}
-
-#showcase-content a:hover{
-    background:#5FCEC0;
+#showcase-content p{
+    color: #ffffff;
 }
 
 /* Section-content */
-#icon{
+#icons{
     display: flex;
     flex-direction:column;
     background:#F5F5F5;
@@ -133,24 +140,20 @@ header .header-content{
     padding-bottom:0px;
 }
 
-#icon .icon-top{
+#icons .icon-top{
     text-align:center;
 }
 
-#icon .icon-top h2{
+#icons .icon-top h2{
     margin-bottom:0.5rem;
 }
 
-#icon .icon-top p{
-    color:#7D7F81;
-}
-
-#icon .icon-content{
+#icons .icon-content{
     display:flex;
     margin:5rem 3rem;
 }
 
-#icon .icon-content .box{
+#icons .icon-content .icon-box{
     border:2px solid #F5F5F5;
     border-radius:5px;
     background:#ffffff;
@@ -159,31 +162,144 @@ header .header-content{
     margin:0 1.5rem;
 }
 
-#icon .icon-content .box i{
+#icons .icon-content .icon-box i{
     padding:2rem;
     color:#ffffff;
     border-radius: 50%;
     margin-bottom:1rem;
 }
 
-.i1{
+#icons .icon-content .icon-box .i1{
     background:#3CADD4;
 }
 
-.i2{
+#icons .icon-content .icon-box .i2{
     background:#ADD43C;
 }
 
-.i3{
+#icons .icon-content .icon-box .i3{
     background:#D43C61;
 }
 
-#icon .icon-content .box h3{
+#icons .icon-content .icon-box h3{
     color:#878787;
 }
 
-#icon .icon-content .box p{
+#icons .icon-content .icon-box p{
     color:#585858;
     font-size:1rem;
     text-align:center;
 }
+
+/* Users */
+#users{
+    display:flex;
+    flex-direction: column;
+}
+
+#users .user-top{
+    text-align: center;
+    margin-bottom:4rem;
+}
+
+#users .user-content .container{
+    padding:1rem 0;
+    border-top:1px solid #E3E3E3;
+    border-bottom:1px solid #E3E3E3;
+}
+
+#users .main-div{
+    display:flex;
+    padding:1.5rem 0;
+    align-items:center;
+    align-content: center;
+}
+
+#users .main-div .user-box{
+    display:flex;
+    padding:1rem;
+}
+
+#users .main-div .user-box i{
+    color:#C1C1C1;
+    background:#E3E3E3;
+    padding:1rem;
+    border-radius: 50%;
+    align-self:center;
+    margin:0 0.5rem;
+}
+
+#users .user-box .user-inf h3,
+#users .user-box .user-inf p{
+    font-size:1rem;
+}
+
+#users .user-btm{
+    margin-top:3rem;
+    text-align: center;
+}
+
+#users .user-btm .container{
+    padding:1rem 3rem;
+    text-align: center;
+}
+
+#users .user-btm p{
+    font-size: 1rem;
+    margin-bottom:4rem;
+}
+
+#users .user-btm a{
+    margin-bottom: 4rem;
+}
+
+/* Form Section */
+.form{
+    background:#3CADD4;
+    text-align: center;
+    color:#ffffff;
+}
+
+.form h2{
+    margin-bottom:0.5rem;
+}
+
+.form p{
+    color: #ffffff;
+}
+
+.form form{
+    margin-top:2.8rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.form form input{
+    border:none;
+    padding:0.8rem;
+    border-radius:5px;
+    width:25%;
+    margin:1rem;
+}
+
+.form form textarea{
+    border:none;
+    border-radius:5px;
+    padding:1rem;
+    margin-top:1rem;
+}
+
+.form form button{
+    color:#ffffff;
+    background:#383B43;
+    font-size: 1.3rem;
+    padding:1rem 2rem;
+    border:none;
+    border-radius:50px;
+    margin-top:1.5rem;
+}
+
+.form form button:hover{
+    background:#474747;
+}
+
