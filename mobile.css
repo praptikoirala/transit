@@ -1,0 +1,14 @@
+header{
+    height:80vh;
+}
+
+#navbar{
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#showcase-content{
+    padding-top:2rem;
+}
+
