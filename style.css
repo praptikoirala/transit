@@ -59,16 +59,15 @@ p{
 /* Navbar & Showcase */
 header{
     background:black url('./pictures/showcase-img.jpg')no-repeat center center/cover;
-    height:100vh;
+    height: 100vh;
+    position: relative;
 }
 
-header .header-content{
-    height:100%;
-     
+header .header-content{ 
     /*overlay*/
     position: absolute;
     top:0;
-    bottom:110;
+    bottom:0;
     right:0;
     left:0;
     background-color: rgba(0,0,0,0.6);
@@ -88,10 +87,11 @@ header .header-content{
 
 #navbar div{
     display:flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #navbar div ul{
-    align-self:center;
     display:flex;
     list-style:none;
     padding:0.5rem;
@@ -108,13 +108,13 @@ header .header-content{
 }
 
 #navbar div .btn{
-    align-self: center;
     background-color: #ffffff;
     color:#7D7F81;
     text-align: center;
     font-size:1.2rem;
     padding:0.2rem 1rem;
-    border-radius:50px;
+    height: auto;
+    border-radius: 3rem;
 }
 
 
@@ -124,8 +124,24 @@ header .header-content{
     align-content:center;
     align-items:center;
     text-align:center;
-    padding:7rem 0;
     color:white;
+    padding: 7rem 0;
+}
+
+/* 
+    esari haala media query xuttai file banaaunu pardaina tesari garda milen
+    esari garda milyo 
+
+    padding bhanda ni margin chai haala esto case ma
+    ali ramro hola ki
+
+*/
+
+@media screen and (max-width: 768px) {
+
+    #showcase-content {
+        padding: 2rem 0;
+    }
 }
 
 #showcase-content p{

@@ -9,6 +9,7 @@ header{
 }
 
 #showcase-content{
-    padding-top:2rem;
+    border: 1px solid white;
+    padding: 2rem 0;
 }
 
