@@ -38,7 +38,7 @@ p{
 
 .s-heading{
     font-size:1.5rem;
-    margin-bottom:1rem;
+    margin-bottom:1.3rem;
 }
 
 .py-1{padding:4.5rem 0;}
@@ -303,3 +303,46 @@ header .header-content{
     background:#474747;
 }
 
+/* Footer */
+#lists{
+    background:#383B43;
+}
+
+#lists .foot-content{
+    display:flex;
+    justify-content: space-around;
+    margin:0 3rem;
+}
+
+#lists .foot-box{
+    margin:0 1rem;
+}
+
+#lists .foot-box h3{
+    color:#ffffff;
+    font-size:1.3rem;
+}
+
+#lists .foot-box ul{
+    list-style:none;
+}
+
+#lists .foot-box ul li{
+    margin-bottom:0.6rem;
+}
+
+#lists .foot-box ul li a{
+    color:#7D7F81;
+    font-size:1.1rem;
+}
+
+#lists .foot-box ul li a:hover{
+    text-decoration: underline;
+}
+
+#lists .foot-btm{
+    border-top:1px solid #7D7F81;
+    text-align: center;
+    margin:3rem 4rem;
+    padding-top:4rem;
+}
