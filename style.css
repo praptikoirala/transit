@@ -28,7 +28,7 @@ p{
 }
 
 .l-heading{
-    font-size:3.2rem;
+    font-size:3.5rem;
     margin-bottom:2.5rem;
 }
 
@@ -212,9 +212,14 @@ header .header-content{
 
 #users .main-div{
     display:flex;
+    justify-content: space-evenly;
     padding:1.5rem 0;
-    align-items:center;
-    align-content: center;
+}
+
+#users .main-div .ib1,
+#users .main-div .ib2{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #users .main-div .user-box{
@@ -359,6 +364,10 @@ header .header-content{
 
 /* Media Query */
 @media screen and (max-width: 1200px){
+    #lists{
+        padding:2.3rem;
+    }
+
     #lists .foot-content{
         flex-direction:column;
     }
@@ -371,6 +380,10 @@ header .header-content{
     #lists .foot-content .d2{
         justify-content: space-evenly;
     }
+
+    #lists .foot-box{
+        margin-top:1.5rem;
+    }
 }
 
 @media screen and (max-width: 980px){
@@ -381,6 +394,113 @@ header .header-content{
     }
 
     #showcase-content{
-        padding-top:3.5rem;
-    }    
+        padding-top:5.5rem;
+    } 
+
+    .l-heading{
+        margin-bottom:1rem;
+    }
+
+    .abtn{
+        margin-top:2rem;
+    }
+    
+    #users .main-div{
+        flex-direction:column;
+    }
+
+    #users .main-div .ib1{
+        margin-bottom:1.5rem;
+    }  
 }
+
+@media screen and (max-width: 830px){
+    #showcase-content{
+        padding-top:5rem;
+    }
+
+    .l-heading{
+        font-size:3rem;
+    } 
+    
+    p{
+        font-size:1.4rem;
+    }
+
+    #icons,
+    #users{
+       padding-top:2rem;
+    }
+
+    #icons .icon-top h2,
+    #users .user-top h2,
+    .form h2{
+        font-size:2.5rem;
+    }
+    
+    #icons .icon-top p,
+    #users .user-top p,
+    .form p{
+        font-size:1.3rem;
+    }
+
+    #icons .icon-content{
+        margin-top:3rem;
+        margin-bottom:2rem;
+        flex-direction: column;
+    }
+
+    #icons .icon-content .icon-box{
+        margin-bottom:2rem;
+    }
+
+    .form .container{
+        padding-top:2rem ;
+    }
+
+    .form form{
+        margin-top:2rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .l-heading{
+        font-size:2.5rem;
+    }
+
+    p{
+        font-size:1.3rem;
+    }
+
+    #icons .icon-top h2,
+    #users .user-top h2,
+    .form h2{
+        font-size:2rem;
+    }
+    
+    #icons .icon-top p,
+    #users .user-top p,
+    .form p{
+        font-size:1.2rem;
+    }
+
+    .form form .f-top{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items:center;
+    }
+
+    .form form input,
+    .form form textarea{
+        width:80%;
+    }   
+
+    #lists .foot-content .d1,
+    #lists .foot-content .d2{
+        flex-direction: column;
+        align-content: center;
+        align-items:center;
+    }
+}
+
