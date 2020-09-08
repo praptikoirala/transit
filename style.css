@@ -47,7 +47,7 @@ p{
 .py-3{padding:1.5rem 0;}
 
 .abtn{
-    padding:1.2rem 3rem;
+    padding:1rem 1.5rem;
     background:#3CADD4;
     border-radius:50px;
     margin-top:3rem;
@@ -126,7 +126,7 @@ header .header-content{
     align-items:center;
     text-align:center;
     color:white;
-    padding: 7rem 0;
+    padding:5.2rem 0;
 }
 
 #showcase-content p{
@@ -212,14 +212,14 @@ header .header-content{
 
 #users .main-div{
     display:flex;
-    justify-content: space-evenly;
+    justify-content:center;
     padding:1.5rem 0;
 }
 
 #users .main-div .ib1,
 #users .main-div .ib2{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
 }
 
 #users .main-div .user-box{
@@ -394,7 +394,7 @@ header .header-content{
     }
 
     #showcase-content{
-        padding-top:5.5rem;
+        padding:3.5rem 1rem;
     } 
 
     .l-heading{
@@ -415,10 +415,6 @@ header .header-content{
 }
 
 @media screen and (max-width: 830px){
-    #showcase-content{
-        padding-top:5rem;
-    }
-
     .l-heading{
         font-size:3rem;
     } 
@@ -442,6 +438,7 @@ header .header-content{
     #users .user-top p,
     .form p{
         font-size:1.3rem;
+        padding:0 1rem;
     }
 
     #icons .icon-content{
@@ -461,15 +458,32 @@ header .header-content{
     .form form{
         margin-top:2rem;
     }
+
+    .form form .f-top{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items:center;
+    }
+
+    .form form input,
+    .form form textarea{
+        width:80%;
+    }
 }
 
 @media screen and (max-width: 650px){
+    #showcase-content{
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+
     .l-heading{
         font-size:2.5rem;
     }
 
     p{
-        font-size:1.3rem;
+        font-size:1.2rem;
     }
 
     #icons .icon-top h2,
@@ -482,18 +496,7 @@ header .header-content{
     #users .user-top p,
     .form p{
         font-size:1.2rem;
-    }
-
-    .form form .f-top{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items:center;
-    }
-
-    .form form input,
-    .form form textarea{
-        width:80%;
+        padding:0 1rem;
     }   
 
     #lists .foot-content .d1,
@@ -502,5 +505,84 @@ header .header-content{
         align-content: center;
         align-items:center;
     }
+}
+
+@media screen and (max-width: 570px){
+    #navbar{
+        padding:0.5rem;
+    }
+
+    #navbar div{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #navbar h2{
+        margin-bottom:0;
+    }
+
+    #navbar div ul{
+        margin-right:0rem;
+    }
+
+    #navbar div ul li a{
+        padding:0.5rem;
+    }
+
+    #navbar div a{
+        margin-top: 1rem;
+    }
+
+    #showcase-content{
+        margin-top:3rem;
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+
+    .l-heading{
+        font-size:2.2rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    #icons .icon-top h2,
+    #users .user-top h2,
+    .form h2{
+        font-size:1.6rem;
+    }
+
+    #icons .icon-top p,
+    #users .user-top p,
+    .form p{
+        font-size:1rem;
+        padding:0 0.5rem;
+    }
+
+    #icons .icon-content{
+        margin-top:1.5rem;
+    }
+
+    #users .user-top{
+        margin-bottom:2rem;
+    }
+
+    #users .main-div{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    #users .main-div .ib1,
+    #users .main-div .ib2{
+        display: flex;
+        flex-direction: column;
+        align-content:space-evenly;
+        align-items:space-evenly;
+    }
+
 }
 
