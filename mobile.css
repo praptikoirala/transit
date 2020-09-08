@@ -1,12 +1,4 @@
-header{
-    height:80vh;
-}
 
-#navbar{
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
 
 #showcase-content{
     border: 1px solid white;

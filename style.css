@@ -56,6 +56,7 @@ p{
 .abtn:hover{
     background:#5FCEC0;
 }
+
 /* Navbar & Showcase */
 header{
     background:black url('./pictures/showcase-img.jpg')no-repeat center center/cover;
@@ -126,22 +127,6 @@ header .header-content{
     text-align:center;
     color:white;
     padding: 7rem 0;
-}
-
-/* 
-    esari haala media query xuttai file banaaunu pardaina tesari garda milen
-    esari garda milyo 
-
-    padding bhanda ni margin chai haala esto case ma
-    ali ramro hola ki
-
-*/
-
-@media screen and (max-width: 768px) {
-
-    #showcase-content {
-        padding: 2rem 0;
-    }
 }
 
 #showcase-content p{
@@ -304,6 +289,8 @@ header .header-content{
     border-radius:5px;
     padding:1rem;
     margin-top:1rem;
+    width:54%;
+    height:13rem;
 }
 
 .form form button{
@@ -326,12 +313,18 @@ header .header-content{
 }
 
 #lists .foot-content{
-    display:flex;
-    justify-content: space-around;
-    margin:0 3rem;
+    display: flex;
+    justify-content: center;
+    
 }
 
-#lists .foot-box{
+#lists .foot-content .d1,
+#lists .foot-content .d2{
+    display: flex;
+}
+
+#lists .foot-box
+{
     margin:0 1rem;
 }
 
@@ -362,4 +355,32 @@ header .header-content{
     text-align: center;
     margin:3rem 4rem;
     padding-top:4rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 1200px){
+    #lists .foot-content{
+        flex-direction:column;
+    }
+
+    #lists .foot-content .d1{
+        margin-bottom: 2rem;
+    }
+
+    #lists .foot-content .d1,
+    #lists .foot-content .d2{
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 980px){
+    #navbar{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    #showcase-content{
+        padding-top:3.5rem;
+    }    
 }
