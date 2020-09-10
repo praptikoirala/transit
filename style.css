@@ -488,6 +488,13 @@ header .header-content{
         font-size:1.2rem;
     }
 
+    .abtn{
+        padding:1rem 1.5rem;
+        background:#3CADD4;
+        border-radius:50px;
+        margin-top:3rem;
+    }
+
     #icons .icon-top h2,
     #users .user-top h2,
     .form h2{
@@ -500,6 +507,11 @@ header .header-content{
         font-size:1.2rem;
         padding:0 1rem;
     }   
+
+    #users .user-btm a{
+        font-size: 1.1rem;
+        padding:1rem;
+    }
 
     #lists .foot-content .d1,
     #lists .foot-content .d2{
